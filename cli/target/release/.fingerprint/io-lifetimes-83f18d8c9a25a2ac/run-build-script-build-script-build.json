@@ -1,1 +1,0 @@
-{"rustc":7160981639802398315,"features":"","target":0,"profile":0,"path":0,"deps":[[18104172902985102843,"build_script_build",false,8070711748561635854]],"local":[{"RerunIfChanged":{"output":"release/build/io-lifetimes-83f18d8c9a25a2ac/output","paths":["build.rs"]}}],"rustflags":[],"metadata":0,"config":0,"compile_kind":0}
