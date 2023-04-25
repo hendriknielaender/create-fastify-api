@@ -1,0 +1,21 @@
+[package]
+name = "create-node-app"
+description = "Rapidly scaffold out a new node app project."
+version = "0.0.1"
+edition = "2021"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/hendriknielaender/start-node"
+keywords = [ "node" ]
+categories = [ "gui" ]
+exclude = [ "/node" ]
+
+[[bin]]
+name = "cargo-create-node-app"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+dialoguer = "0.10"
+pico-args = "0.5"
+rust-embed = { version = "6.6", features = [ "compression", "interpolate-folder-path" ] }
