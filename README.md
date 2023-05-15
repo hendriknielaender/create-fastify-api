@@ -1,5 +1,14 @@
-# start-node
-basic template for your next node project
+# create-node-api
+Currently supported template presets include:
+
+- `fastify`
+- `fastify-lambda`
+
+In Progress
+- `fastify-lavamoat`
+- `fastify-lambda-lavamoat`
+- `fastify-cloudflare-workers`
+
 
 ## TODOs
 - [x] typescript
