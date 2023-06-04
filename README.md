@@ -1,4 +1,4 @@
-# create-node-api
+# create-fastify-api
 Currently supported template presets include:
 
 - `fastify`
