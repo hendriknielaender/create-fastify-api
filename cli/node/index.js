@@ -32,24 +32,24 @@ switch (platform) {
   case 'android':
     switch (arch) {
       case 'arm64':
-        localFileExisted = existsSync(join(__dirname, 'create-node-api.android-arm64.node'))
+        localFileExisted = existsSync(join(__dirname, 'create-fastify-api.android-arm64.node'))
         try {
           if (localFileExisted) {
-            nativeBinding = require('./create-node-api.android-arm64.node')
+            nativeBinding = require('./create-fastify-api.android-arm64.node')
           } else {
-            nativeBinding = require('create-node-api-android-arm64')
+            nativeBinding = require('create-fastify-api-android-arm64')
           }
         } catch (e) {
           loadError = e
         }
         break
       case 'arm':
-        localFileExisted = existsSync(join(__dirname, 'create-node-api.android-arm-eabi.node'))
+        localFileExisted = existsSync(join(__dirname, 'create-fastify-api.android-arm-eabi.node'))
         try {
           if (localFileExisted) {
-            nativeBinding = require('./create-node-api.android-arm-eabi.node')
+            nativeBinding = require('./create-fastify-api.android-arm-eabi.node')
           } else {
-            nativeBinding = require('create-node-api-android-arm-eabi')
+            nativeBinding = require('create-fastify-api-android-arm-eabi')
           }
         } catch (e) {
           loadError = e
@@ -63,13 +63,13 @@ switch (platform) {
     switch (arch) {
       case 'x64':
         localFileExisted = existsSync(
-          join(__dirname, 'create-node-api.win32-x64-msvc.node')
+          join(__dirname, 'create-fastify-api.win32-x64-msvc.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./create-node-api.win32-x64-msvc.node')
+            nativeBinding = require('./create-fastify-api.win32-x64-msvc.node')
           } else {
-            nativeBinding = require('create-node-api-win32-x64-msvc')
+            nativeBinding = require('create-fastify-api-win32-x64-msvc')
           }
         } catch (e) {
           loadError = e
@@ -77,13 +77,13 @@ switch (platform) {
         break
       case 'ia32':
         localFileExisted = existsSync(
-          join(__dirname, 'create-node-api.win32-ia32-msvc.node')
+          join(__dirname, 'create-fastify-api.win32-ia32-msvc.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./create-node-api.win32-ia32-msvc.node')
+            nativeBinding = require('./create-fastify-api.win32-ia32-msvc.node')
           } else {
-            nativeBinding = require('create-node-api-win32-ia32-msvc')
+            nativeBinding = require('create-fastify-api-win32-ia32-msvc')
           }
         } catch (e) {
           loadError = e
@@ -91,13 +91,13 @@ switch (platform) {
         break
       case 'arm64':
         localFileExisted = existsSync(
-          join(__dirname, 'create-node-api.win32-arm64-msvc.node')
+          join(__dirname, 'create-fastify-api.win32-arm64-msvc.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./create-node-api.win32-arm64-msvc.node')
+            nativeBinding = require('./create-fastify-api.win32-arm64-msvc.node')
           } else {
-            nativeBinding = require('create-node-api-win32-arm64-msvc')
+            nativeBinding = require('create-fastify-api-win32-arm64-msvc')
           }
         } catch (e) {
           loadError = e
@@ -108,23 +108,23 @@ switch (platform) {
     }
     break
   case 'darwin':
-    localFileExisted = existsSync(join(__dirname, 'create-node-api.darwin-universal.node'))
+    localFileExisted = existsSync(join(__dirname, 'create-fastify-api.darwin-universal.node'))
     try {
       if (localFileExisted) {
-        nativeBinding = require('./create-node-api.darwin-universal.node')
+        nativeBinding = require('./create-fastify-api.darwin-universal.node')
       } else {
-        nativeBinding = require('create-node-api-darwin-universal')
+        nativeBinding = require('create-fastify-api-darwin-universal')
       }
       break
     } catch {}
     switch (arch) {
       case 'x64':
-        localFileExisted = existsSync(join(__dirname, 'create-node-api.darwin-x64.node'))
+        localFileExisted = existsSync(join(__dirname, 'create-fastify-api.darwin-x64.node'))
         try {
           if (localFileExisted) {
-            nativeBinding = require('./create-node-api.darwin-x64.node')
+            nativeBinding = require('./create-fastify-api.darwin-x64.node')
           } else {
-            nativeBinding = require('create-node-api-darwin-x64')
+            nativeBinding = require('create-fastify-api-darwin-x64')
           }
         } catch (e) {
           loadError = e
@@ -132,13 +132,13 @@ switch (platform) {
         break
       case 'arm64':
         localFileExisted = existsSync(
-          join(__dirname, 'create-node-api.darwin-arm64.node')
+          join(__dirname, 'create-fastify-api.darwin-arm64.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./create-node-api.darwin-arm64.node')
+            nativeBinding = require('./create-fastify-api.darwin-arm64.node')
           } else {
-            nativeBinding = require('create-node-api-darwin-arm64')
+            nativeBinding = require('create-fastify-api-darwin-arm64')
           }
         } catch (e) {
           loadError = e
@@ -152,12 +152,12 @@ switch (platform) {
     if (arch !== 'x64') {
       throw new Error(`Unsupported architecture on FreeBSD: ${arch}`)
     }
-    localFileExisted = existsSync(join(__dirname, 'create-node-api.freebsd-x64.node'))
+    localFileExisted = existsSync(join(__dirname, 'create-fastify-api.freebsd-x64.node'))
     try {
       if (localFileExisted) {
-        nativeBinding = require('./create-node-api.freebsd-x64.node')
+        nativeBinding = require('./create-fastify-api.freebsd-x64.node')
       } else {
-        nativeBinding = require('create-node-api-freebsd-x64')
+        nativeBinding = require('create-fastify-api-freebsd-x64')
       }
     } catch (e) {
       loadError = e
@@ -168,26 +168,26 @@ switch (platform) {
       case 'x64':
         if (isMusl()) {
           localFileExisted = existsSync(
-            join(__dirname, 'create-node-api.linux-x64-musl.node')
+            join(__dirname, 'create-fastify-api.linux-x64-musl.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./create-node-api.linux-x64-musl.node')
+              nativeBinding = require('./create-fastify-api.linux-x64-musl.node')
             } else {
-              nativeBinding = require('create-node-api-linux-x64-musl')
+              nativeBinding = require('create-fastify-api-linux-x64-musl')
             }
           } catch (e) {
             loadError = e
           }
         } else {
           localFileExisted = existsSync(
-            join(__dirname, 'create-node-api.linux-x64-gnu.node')
+            join(__dirname, 'create-fastify-api.linux-x64-gnu.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./create-node-api.linux-x64-gnu.node')
+              nativeBinding = require('./create-fastify-api.linux-x64-gnu.node')
             } else {
-              nativeBinding = require('create-node-api-linux-x64-gnu')
+              nativeBinding = require('create-fastify-api-linux-x64-gnu')
             }
           } catch (e) {
             loadError = e
@@ -197,26 +197,26 @@ switch (platform) {
       case 'arm64':
         if (isMusl()) {
           localFileExisted = existsSync(
-            join(__dirname, 'create-node-api.linux-arm64-musl.node')
+            join(__dirname, 'create-fastify-api.linux-arm64-musl.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./create-node-api.linux-arm64-musl.node')
+              nativeBinding = require('./create-fastify-api.linux-arm64-musl.node')
             } else {
-              nativeBinding = require('create-node-api-linux-arm64-musl')
+              nativeBinding = require('create-fastify-api-linux-arm64-musl')
             }
           } catch (e) {
             loadError = e
           }
         } else {
           localFileExisted = existsSync(
-            join(__dirname, 'create-node-api.linux-arm64-gnu.node')
+            join(__dirname, 'create-fastify-api.linux-arm64-gnu.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./create-node-api.linux-arm64-gnu.node')
+              nativeBinding = require('./create-fastify-api.linux-arm64-gnu.node')
             } else {
-              nativeBinding = require('create-node-api-linux-arm64-gnu')
+              nativeBinding = require('create-fastify-api-linux-arm64-gnu')
             }
           } catch (e) {
             loadError = e
@@ -225,13 +225,13 @@ switch (platform) {
         break
       case 'arm':
         localFileExisted = existsSync(
-          join(__dirname, 'create-node-api.linux-arm-gnueabihf.node')
+          join(__dirname, 'create-fastify-api.linux-arm-gnueabihf.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./create-node-api.linux-arm-gnueabihf.node')
+            nativeBinding = require('./create-fastify-api.linux-arm-gnueabihf.node')
           } else {
-            nativeBinding = require('create-node-api-linux-arm-gnueabihf')
+            nativeBinding = require('create-fastify-api-linux-arm-gnueabihf')
           }
         } catch (e) {
           loadError = e

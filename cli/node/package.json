@@ -1,10 +1,10 @@
 {
-  "name": "create-node-api",
-  "version": "1.0.0",
+  "name": "create-fastify-api",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "create-node-api": "node ./create-node-api.js",
+    "create-fastify-api": "node ./create-fastify-api.js",
     "artifacts": "napi artifacts",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
@@ -13,16 +13,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hendriknielaender/create-node-api.git"
+    "url": "git+https://github.com/hendriknielaender/create-fastify-api.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hendriknielaender/create-node-api/issues"
+    "url": "https://github.com/hendriknielaender/create-fastify-api/issues"
   },
-  "homepage": "https://github.com/hendriknielaender/create-node-api#readme",
+  "homepage": "https://github.com/hendriknielaender/create-fastify-api#readme",
   "napi": {
-    "name": "create-node-api",
+    "name": "create-fastify-api",
     "triples": {
       "additional": [
         "aarch64-apple-darwin",
@@ -42,18 +42,18 @@
     "node": ">= 18"
   },
   "bin": {
-    "create-node-api": "create-node-api.js"
+    "create-fastify-api": "create-fastify-api.js"
   },
   "optionalDependencies": {
-    "create-node-api-win32-x64-msvc": "1.0.0",
-    "create-node-api-darwin-x64": "1.0.0",
-    "create-node-api-linux-x64-gnu": "1.0.0",
-    "create-node-api-darwin-arm64": "1.0.0",
-    "create-node-api-linux-arm64-gnu": "1.0.0",
-    "create-node-api-linux-arm64-musl": "1.0.0",
-    "create-node-api-linux-arm-gnueabihf": "1.0.0",
-    "create-node-api-linux-x64-musl": "1.0.0",
-    "create-node-api-win32-ia32-msvc": "1.0.0",
-    "create-node-api-win32-arm64-msvc": "1.0.0"
+    "create-fastify-api-win32-x64-msvc": "0.0.2",
+    "create-fastify-api-darwin-x64": "0.0.2",
+    "create-fastify-api-linux-x64-gnu": "0.0.2",
+    "create-fastify-api-darwin-arm64": "0.0.2",
+    "create-fastify-api-linux-arm64-gnu": "0.0.2",
+    "create-fastify-api-linux-arm64-musl": "0.0.2",
+    "create-fastify-api-linux-arm-gnueabihf": "0.0.2",
+    "create-fastify-api-linux-x64-musl": "0.0.2",
+    "create-fastify-api-win32-ia32-msvc": "0.0.2",
+    "create-fastify-api-win32-arm64-msvc": "0.0.2"
   }
 }

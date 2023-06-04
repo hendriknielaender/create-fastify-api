@@ -1,6 +1,6 @@
 [package]
 edition = "2021"
-name = "create-node-api"
+name = "create-fastify-api"
 version = "0.0.0"
 license = "MIT"
 
@@ -11,7 +11,7 @@ crate-type = ["cdylib"]
 # Default enable napi4 feature, see https://nodejs.org/api/n-api.html#node-api-version-matrix
 napi = { version = "2.12", default-features = false, features = ["napi4"] }
 napi-derive = "2.12"
-create-node-api = { path = ".." }
+create-fastify-api = { path = ".." }
 
 [build-dependencies]
 napi-build = "2.0"

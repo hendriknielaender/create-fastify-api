@@ -1,7 +1,7 @@
 {
-  "name": "start-node",
-  "version": "1.0.0",
-  "description": "basic template for your next node project",
+  "name": "create-fastify-api",
+  "version": "0.0.1",
+  "description": "basic template for your next fastify project",
   "main": "index.ts",
   "type": "module",
   "scripts": {
