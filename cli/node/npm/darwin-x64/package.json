@@ -1,0 +1,18 @@
+{
+  "name": "create-fastify-api-darwin-x64",
+  "version": "0.0.2",
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "create-fastify-api.darwin-x64.node",
+  "files": [
+    "create-fastify-api.darwin-x64.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 18"
+  }
+}

@@ -9,13 +9,13 @@ fn main() {
         .and_then(Path::file_stem)
         .and_then(OsStr::to_str)
     {
-        Some("cargo-create-node-app") => {
-            if args.peek().and_then(|s| s.to_str()) == Some("create-node-app") {
+        Some("cargo-create-fastify-api") => {
+            if args.peek().and_then(|s| s.to_str()) == Some("create-fastify-api") {
                 // remove the extra cargo subcommand
                 args.next();
-                Some("cargo create-node-app".into())
+                Some("cargo create-fastify-api".into())
             } else {
-                Some("cargo-create-node-app".into())
+                Some("cargo-create-fastify-api".into())
             }
         }
         Some(stem) => Some(stem.to_string()),
@@ -25,5 +25,5 @@ fn main() {
         }
     };
 
-    create_node_app::run(args, bin_name);
+    create_fastify_api::run(args, bin_name);
 }

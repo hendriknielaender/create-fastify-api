@@ -1,17 +1,17 @@
 [package]
-name = "create-node-app"
+name = "create-fastify-api"
 description = "Rapidly scaffold out a new node app project."
 version = "0.0.1"
 edition = "2021"
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/hendriknielaender/start-node"
+repository = "https://github.com/hendriknielaender/create-fastify-api"
 keywords = [ "node" ]
 categories = [ "gui" ]
 exclude = [ "/node" ]
 
 [[bin]]
-name = "cargo-create-node-app"
+name = "cargo-create-fastify-api"
 path = "src/main.rs"
 
 [dependencies]
