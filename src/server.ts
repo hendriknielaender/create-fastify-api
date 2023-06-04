@@ -11,7 +11,7 @@ const server = fastify({
     }
   },
   logger: {
-    //level: process.env.LOG_LEVEL ?? "info",
+    level: process.env['LOG_LEVEL'] ?? "info",
   },
 });
 
