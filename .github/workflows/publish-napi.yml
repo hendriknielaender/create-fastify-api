@@ -171,7 +171,9 @@ jobs:
           cache-dependency-path: '**/pnpm-lock.yaml'
 
       - name: Install dependencies
-        run: pnpm install -w --filter .
+        run: |
+          cd ..
+          pnpm install -w --filter .
 
       - name: Download all artifacts
         uses: actions/download-artifact@v3
